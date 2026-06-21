@@ -76,7 +76,8 @@ class WSpider(scrapy.Spider):
             EC.visibility_of_element_located((By.CLASS_NAME, 'picker-content'))
         ).text
         data = data.split("\n")
-        PRECIPIRATION = ecipitation = data[0]
+
+        PRECIPIRATION = data[0]
         TIME = data[1]
 
 
